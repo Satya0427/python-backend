@@ -22,6 +22,17 @@ class UserListResponse:
     status: StatusResponse
     data: Optional[List[User]] = []
 
-class userLogins(BaseModel):
-    email:EmailStr
-    password:str
+
+
+class userCreation(BaseModel):
+     fullName:str
+     usernames:str
+     email:str
+     phone:str
+     dob:str
+     gender:str
+     password:str
+     confirmPassword:str
+     address:str
+     profilePic:str
+     userType:str
